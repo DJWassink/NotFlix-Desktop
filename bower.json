@@ -1,0 +1,34 @@
+{
+    "name": "NotFlix",
+    "version": "0.0.1",
+    "authors": [
+        "Dirk-Jan Wassink <dirk.jan.wassink@gmail.com>"
+    ],
+    "description": "It's just not NetFlix.",
+    "main": "main.js",
+    "keywords": [
+        "NotFlix",
+        "NetFlix",
+        "movies",
+        "films",
+        "series",
+        "episodes"
+    ],
+    "license": "MIT",
+    "homepage": "www.dirkjanwassink.nl",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.3.4",
+        "font-awesome": "~4.3.0",
+        "jquery.livefilter": "https://github.com/DJWassink/jquery.livefilter.git",
+        "bootswatch": "~3.3.4",
+        "raty": "~2.7.0",
+        "bootstrapvalidator": "~0.5.3"
+    }
+}
