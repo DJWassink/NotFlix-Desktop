@@ -13,7 +13,7 @@
       }
   });
 
-  function fillMoviePoster(json, callback) {
+  function fillMoviePoster(json) {
       var thisMovie = movieTemplateClone.clone();
       thisMovie.data('json', json);
 
@@ -70,7 +70,6 @@
       thisPoster.onload = function () {
           thisMovie.find('.movie-poster').attr('src', this.src);
           movieTemplate.before(thisMovie);
-          callback();
       };
   }
 
@@ -79,9 +78,6 @@
       dialog.addClass('fullscreen-dialog-active');
       var fanartImage = new Image();
       fanartImage.src = 'images/fanarts_medium/' + json.imdb_id + '_fanart.jpg';
-
-      dialog.css('background-image', 'url("/NotFlix/desktop/img/movie-poster.png")');
-      dialog.find('.fullscreen-dialog-poster').attr('src', '/NotFlix/img/movie-poster.png');
 
       fanartImage.onload = function () {
           dialog.css('background-image', 'url("' + this.src + '")');
